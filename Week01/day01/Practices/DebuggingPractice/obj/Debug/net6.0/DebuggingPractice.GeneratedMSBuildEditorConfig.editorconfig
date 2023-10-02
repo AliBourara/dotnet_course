@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = FundamentalsOne
-build_property.ProjectDir = c:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Practices\FundamentalsOne\
+build_property.RootNamespace = DebuggingPractice
+build_property.ProjectDir = c:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Practices\DebuggingPractice\
