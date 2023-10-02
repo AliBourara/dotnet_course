@@ -1,0 +1,15 @@
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.csproj.AssemblyReference.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.AssemblyInfoInputs.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.AssemblyInfo.cs
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.csproj.CoreCompileInputs.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\bin\Debug\net6.0\Puzzle.exe
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\bin\Debug\net6.0\Puzzle.deps.json
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\bin\Debug\net6.0\Puzzle.runtimeconfig.json
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\bin\Debug\net6.0\Puzzle.dll
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\bin\Debug\net6.0\Puzzle.pdb
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.dll
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\refint\Puzzle.dll
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.pdb
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\Puzzle.genruntimeconfig.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\Cores\Puzzle\obj\Debug\net6.0\ref\Puzzle.dll
