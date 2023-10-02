@@ -1,0 +1,15 @@
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.exe
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.deps.json
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.runtimeconfig.json
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.dll
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\bin\Debug\net6.0\FundamentalsOne.pdb
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.csproj.AssemblyReference.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.AssemblyInfoInputs.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.AssemblyInfo.cs
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.csproj.CoreCompileInputs.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.dll
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\refint\FundamentalsOne.dll
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.pdb
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\FundamentalsOne.genruntimeconfig.cache
+C:\Users\Bourara\Desktop\dotnet_course\Week01\day01\FundamentalsOne\obj\Debug\net6.0\ref\FundamentalsOne.dll
