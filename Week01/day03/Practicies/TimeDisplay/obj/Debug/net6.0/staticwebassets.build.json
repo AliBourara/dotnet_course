@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "CUERKu/nwKMan+rucyuKDfuEIJdYnG8pcTPnXksomJ0=",
+  "Source": "TimeDisplay",
+  "BasePath": "_content/TimeDisplay",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TimeDisplay\\wwwroot",
+      "Source": "TimeDisplay",
+      "ContentRoot": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week01\\day03\\Practicies\\TimeDisplay\\wwwroot\\",
+      "BasePath": "_content/TimeDisplay",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

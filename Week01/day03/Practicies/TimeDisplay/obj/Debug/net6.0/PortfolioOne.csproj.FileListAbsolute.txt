@@ -1,0 +1,8 @@
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.csproj.AssemblyReference.cache
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.AssemblyInfoInputs.cache
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.AssemblyInfo.cs
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.csproj.CoreCompileInputs.cache
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.RazorAssemblyInfo.cache
+C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week01\day03\Practicies\PortfolioTwo\obj\Debug\net6.0\PortfolioOne.RazorAssemblyInfo.cs

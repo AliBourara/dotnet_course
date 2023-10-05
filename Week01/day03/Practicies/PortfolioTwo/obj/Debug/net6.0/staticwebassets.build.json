@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "/eleDaVNyuqgJTqYrIb87eEMcTiusn+IdbmdVq1DyV4=",
+  "Source": "PortfolioTwo",
+  "BasePath": "_content/PortfolioTwo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PortfolioTwo\\wwwroot",
+      "Source": "PortfolioTwo",
+      "ContentRoot": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week01\\day03\\Practicies\\PortfolioTwo\\wwwroot\\",
+      "BasePath": "_content/PortfolioTwo",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week01\\day03\\Practicies\\PortfolioTwo\\wwwroot\\images\\raiden.jpg",
+      "SourceId": "PortfolioTwo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week01\\day03\\Practicies\\PortfolioTwo\\wwwroot\\",
+      "BasePath": "_content/PortfolioTwo",
+      "RelativePath": "images/raiden.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\raiden.jpg"
+    }
+  ]
+}

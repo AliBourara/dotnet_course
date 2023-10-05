@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "EWeR+gVlOYItHvq5GXjGfRGvY3Uf9M1OmCBw4buWo6g=",
+  "Source": "DojoSurvey",
+  "BasePath": "_content/DojoSurvey",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DojoSurvey\\wwwroot",
+      "Source": "DojoSurvey",
+      "ContentRoot": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week01\\day03\\Cores\\DojoSurvey\\wwwroot\\",
+      "BasePath": "_content/DojoSurvey",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

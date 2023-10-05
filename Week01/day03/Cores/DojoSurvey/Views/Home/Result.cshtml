@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Projects</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Submitted Info</h1>
+        <div class="row mt-5 d-flex flex-row justify-content-center">
+            <div class="col-8 d-flex flex-column align-items-center border border-2 p-2">
+                <div class="d-flex flex-row justify-content-between align-items-center gap-5 p-5">
+                    <h3 class="fw-bold" >Name :</h3>
+                    <h3>@ViewBag.Name</h3>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center gap-5 p-5">
+                    <h3 class="fw-bold" >Dojo Location :</h3>
+                    <h3>@ViewBag.Location</h3>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center gap-5 p-5">
+                    <h3 class="fw-bold" >Favorite Language :</h3>
+                    <h3>@ViewBag.Language</h3>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center gap-5 p-5">
+                    <h3 class="fw-bold" >Comments :</h3>
+                    <h3>@ViewBag.Comment</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
