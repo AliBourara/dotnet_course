@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Choice
+
+<div class="d-flex flex-column align-items-center gap-2">
+    <h1 class="display-4">Welcome</h1>
+    <form asp-action="HandleSubmission" asp-controller="Home" method="post">
+        <h2 asp-for="ChosenDate">Pick a date</h2>
+        <input type="date" class="form-control" asp-for="ChosenDate">
+        <button type="submit">Submit</button>
+        <span class="error" asp-validation-for="ChosenDate"></span>
+    </form>
+</div>

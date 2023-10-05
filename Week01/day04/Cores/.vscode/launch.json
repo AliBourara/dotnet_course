@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/FormSubmission/bin/Debug/net6.0/FormSubmission.dll",
+            "program": "${workspaceFolder}/DojoSurveywithValidation/bin/Debug/net6.0/DojoSurveywithValidation.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/FormSubmission",
+            "cwd": "${workspaceFolder}/DojoSurveywithValidation",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
