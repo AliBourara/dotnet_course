@@ -21,17 +21,35 @@ public class HomeController : Controller
         return View(AllDishes);
     }
     [HttpGet("Dishes/{dishId}")]
-    public IActionResult Edit(Dish ShowedDish)
+    public IActionResult Show(int dishId)
     {
-        Dish? DishToView = _context.Dishes.FirstOrDefault(q => q.DishId == ShowedDish.DishId);
-        DishToView.Name = ShowedDish.Name;
-        DishToView.Chef = ShowedDish.Chef;
-        DishToView.Tastiness = ShowedDish.Tastiness;
-        DishToView.Calories = ShowedDish.Calories;
-        DishToView.Description = ShowedDish.Description;
-        
+        Dish? DishToView = _context.Dishes.FirstOrDefault(q => q.DishId == dishId);
         return View("ShowOne",DishToView);
     }
+    [HttpGet("Dishes/{dishId}/edit")]
+    public IActionResult Edit(int dishId)
+    {
+        Dish? DishToEdit = _context.Dishes.FirstOrDefault(q => q.DishId == dishId);
+        return View(DishToEdit);
+    }
+    [HttpPost("")]
+    public IActionResult UpdateDish(Dish editedDish)
+    {
+        Dish? DishToUpdate = _context.Dishes.FirstOrDefault(q => q.DishId == editedDish.DishId);
+        if (ModelState.IsValid)
+        {
+            DishToUpdate.Name = editedDish.Name;
+            DishToUpdate.Chef = editedDish.Chef;
+            DishToUpdate.Calories = editedDish.Calories;
+            DishToUpdate.Tastiness = editedDish.Tastiness;
+            DishToUpdate.Description = editedDish.Description;
+            DishToUpdate.UpdatedAt = DateTime.Now;
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View("Edit", DishToUpdate);
+    }
+
     [HttpPost("Dishes/create")]
     public IActionResult CreateSong(Dish newDish)
     {
@@ -44,6 +62,16 @@ public class HomeController : Controller
             return RedirectToAction("Index");
         }
         return View("Privacy");
+    }
+    [HttpPost("Dishes/destroy")]
+    public IActionResult DeleteDish(int dishId)
+    {
+        Dish? DishToDelete = _context.Dishes.FirstOrDefault(s => s.DishId == dishId);
+        // 1 - Delete
+        _context.Dishes.Remove(DishToDelete);
+        // 2 - Save
+        _context.SaveChanges();
+        return RedirectToAction("Index");
     }
     public IActionResult Privacy()
     {

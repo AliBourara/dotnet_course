@@ -7,7 +7,7 @@
     <h3 class="my-5">Check out some recent dishes</h3>
     @{
         foreach(Dish dish in Model){
-        <h6>@dish.Name by @dish.Chef </h6>
+        <h6><a href="Dishes/@dish.DishId">@dish.Name</a> by @dish.Chef </h6>
         }
     }
 </div>
