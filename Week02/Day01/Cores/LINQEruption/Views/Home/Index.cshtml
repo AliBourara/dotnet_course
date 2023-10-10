@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Use LINQ to find the first eruption that is in Chile and print the result.</p>
+    @{
+        foreach(Eruption eruption in ViewBag.stratovolcanoEruptions){
+            <h3>@eruption.Volcano</h3>
+        }
+    }
+    <p>Find the first eruption from the "Hawaiian Is" location and print it. If none is found, print "No Hawaiian Is Eruption found."</p>
+    <h3>@ViewBag.HawaiianIs</h3>
+    <p>Find the first eruption that is after the year 1900 AND in "New Zealand", then print it.</p>
+    @{
+        foreach(Eruption eruption in ViewBag.After1900NewZealand){
+            <h3>@eruption.Volcano</h3>
+        }
+    }
+    <p>Find all eruptions where the volcano's elevation is over 2000m and print them.</p>
+    @{
+        foreach(Eruption eruption in ViewBag.After2000m){
+            <h3>@eruption.Volcano</h3>
+        }
+    }
+    <p>Find all eruptions where the volcano's name starts with "L" and print them. Also print the number of eruptions found.</p>
+    @{
+        foreach(Eruption eruption in ViewBag.StartWithL){
+            <h3>@eruption.Volcano</h3>
+        }
+    }
+    <h3>Number Of Volcano that Start With L : @ViewBag.NumberOfVolcano</h3>
+    <p>Find the highest elevation, and print only that integer (Hint: Look up how to use LINQ to find the max!)</p>
+    <h3>@ViewBag.HighestElevation</h3>
+    <h3>@ViewBag.Elevated.Volcano</h3>
+    <p>Print all Volcano names alphabetically.</p>
+    @{
+        foreach(string eruption in ViewBag.VolcanoName){
+            <h3>@eruption</h3>
+        }
+    }
+    <p>Print all the eruptions that happened before the year 1000 CE alphabetically according to Volcano name</p>
+    @{
+        foreach(string eruption in ViewBag.VolcanoNameAfter1000){
+            <h3>@eruption</h3>
+        }
+    }
+</div>

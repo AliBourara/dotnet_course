@@ -1,0 +1,60 @@
+
+//-----import in the console 
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+
+
+// -1 Program.cs
+
+using Microsoft.EntityFrameworkCore; //! 1 
+using ProjectName.Models; //! 2 
+
+
+var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection"); //! 3
+
+builder.Services.AddControllersWithViews();
+//! 4 
+builder.Services.AddDbContext<MyContext>(options =>
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
+//-2 HomeController
+
+public class HomeController : Controller
+{
+    private MyContext _context; //! 5
+    private readonly ILogger<HomeController> _logger;
+
+    public HomeController(ILogger<HomeController> logger, MyContext context) //! 6 
+    {
+        _logger = logger;
+        _context = context; //! 7
+    }
+
+//-3 Create "MyContext.cs" in the Models
+
+#pragma warning disable CS8618
+using Microsoft.EntityFrameworkCore;
+namespace ProjectName.Models;
+
+public class MyContext : DbContext
+{
+    public MyContext(DbContextOptions options) : base(options) { }
+    //Add  All Tables Here
+    //-access modifier  type DbSet<Model> table name getter setter
+    public DbSet<ClassName> ClassNames { get; set; }
+}
+
+//-4 appesettings.json 
+"AllowedHosts": "*",
+  "ConnectionStrings":
+  {
+      "DefaultConnection": "Server=localhost;port=3306;userid=root;password=root;database=databaseName_db;"
+  }
+}
+
+//-5
+ dotnet ef migrations add FirstMigration
+ dotnet ef database update
