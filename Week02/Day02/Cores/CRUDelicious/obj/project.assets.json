@@ -781,19 +781,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bourara\\.nuget\\packages\\": {}
+    "C:\\Users\\tnt_3\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bourara\\Desktop\\dotnet_course\\Week02\\Day02\\Cores\\CRUDelicious\\CRUDelicious.csproj",
+      "projectUniqueName": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week02\\Day02\\Cores\\CRUDelicious\\CRUDelicious.csproj",
       "projectName": "CRUDelicious",
-      "projectPath": "C:\\Users\\Bourara\\Desktop\\dotnet_course\\Week02\\Day02\\Cores\\CRUDelicious\\CRUDelicious.csproj",
-      "packagesPath": "C:\\Users\\Bourara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bourara\\Desktop\\dotnet_course\\Week02\\Day02\\Cores\\CRUDelicious\\obj\\",
+      "projectPath": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week02\\Day02\\Cores\\CRUDelicious\\CRUDelicious.csproj",
+      "packagesPath": "C:\\Users\\tnt_3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week02\\Day02\\Cores\\CRUDelicious\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bourara\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\tnt_3\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
