@@ -1,0 +1,13 @@
+@model Chef
+<div>
+    <h3>Chef Name</h3>
+            <select asp-for="ChefId" class="form-select w-75">
+    @{
+        foreach (Chef chef in ViewBag.Allchefs)
+        {
+                <option selected value="@chef.ChefId">@chef.FirstName</option>
+        }
+    }
+            </select>
+    <span class="text-danger"></span>
+</div>

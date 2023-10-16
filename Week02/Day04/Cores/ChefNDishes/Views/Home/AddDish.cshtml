@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Add a Dish";
+}
+@await Html.PartialAsync("_Navbar")
+@model Dish
+<div class="container">
+
+<div class="text-center mb-5 w-100">
+    <h1 class="display-4 " >Add A Dish</h1>
+</div>
+<div>
+    <form asp-action="CreateDish" asp-controller="home" method="post" class="row shadow p-5">
+        <div class="col-4 d-flex flex-column gap-3">
+            <h3>Name Of Dish</h3>
+            <input type="text" asp-for="Name" class="form-control w-75" >
+            <span  class="text-danger"  asp-validation-for="Name"></span>
+            <h3># Of Calories</h3>
+            <input type="number" class="form-control w-75" asp-for="Calories" >
+            <span  class="text-danger" asp-validation-for="Calories"></span>
+        </div>
+        <div class="col-4 d-flex flex-column gap-3">
+            @await Html.PartialAsync("_AllChefs")
+        </div>
+        <div class="col-4 d-flex flex-column gap-3">
+            <h3>Tastiness</h3>
+            <select class="form-select w-75" asp-for="Tastiness">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span  class="text-danger mb-5" asp-validation-for="Tastiness"></span>
+            <button type="submit" class="btn btn-primary mt-5 w-75">Add Dish</button>
+        </div>
+    </form>
+
+</div>
+</div>

@@ -15,16 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week02\Day04\Cores\ChefNDishes
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Home/AddChef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRDaGVmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Home/AddDish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGREaXNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Home/Diches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaWNoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Home/_AllChefs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWxsQ2hlZnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week02/Day04/Cores/ChefNDishes/Views/Shared/_ValidationScriptsPartial.cshtml]
