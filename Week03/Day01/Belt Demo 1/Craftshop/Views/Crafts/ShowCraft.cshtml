@@ -1,0 +1,33 @@
+@{
+    int UserIdFromSession = (int)Context.Session.GetInt32("userId");
+}
+@model Craft
+@await Html.PartialAsync("_NavBar");
+
+<div class="container">
+    <h1>@Model.Title</h1>
+    <div class="row d-flex gap-2 m-3">
+        <div class="col-8">
+            <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid rounded border">
+        </div>
+        <div class="col-2">
+            <p class="mb-3 h3">By : <span class="text-muted">@Model.Owner.Username</span></p>
+            <p class="mb-3 h3">@Model.Price $</p>
+            <p class="text-primary mb-3 h3">Only : @Model.Quntity in stock!</p>
+            @{
+                Order newOrder = new()
+            {
+                UserId = UserIdFromSession,
+                CraftId = Model.CraftId
+            };
+                OrderView orderView = new()
+                {
+                    NewOrder = newOrder,
+                    OwnerId = Model.UserId
+                };
+            }
+            @await Html.PartialAsync("~/Views/Orders/_NewOrder.cshtml", orderView)
+        </div>
+    </div>
+    <p class="h5 mt-5">@Model.Description</p>
+</div>

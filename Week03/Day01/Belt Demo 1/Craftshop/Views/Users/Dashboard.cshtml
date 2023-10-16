@@ -1,0 +1,7 @@
+@{
+    string Username = (string)Context.Session.GetString("username");
+}
+@await Html.PartialAsync("_NavBar")
+<div class="container">
+    <h1>Welcome, @Username</h1>
+</div>

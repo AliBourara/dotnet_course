@@ -1,0 +1,36 @@
+@{
+    int UserId = (int)Context.Session.GetInt32("userId");
+}
+@model List<Craft>
+@await Html.PartialAsync("_NavBar")
+<div class="container mt-5">
+    <h1 class="mb-5">Shop Crafts</h1>
+    <div class="row">
+        @foreach (Craft craft in Model)
+        {
+            <div class="col-sm-6 col-lg-3 col-md-3 m-3">
+                <div class="card border-white rounded" style="width: 18rem;">
+                    <img class="card-img-top mt-2 " src="@craft.ImageUrl" alt="@craft.Title">
+                    <div class="card-body">
+                        <div class="d-flex flex-column gap-2">
+                            <a href="crafts/@craft.CraftId" class="card-title h5 text-info">@craft.Title</a>
+                            <p class="card-text">By : <span class="text-muted">@craft.Owner.Username</span></p>
+                            <p class="card-text">Price : <span class="text-muted">@craft.Price $</span></p>
+                            <p class="card-text">Only : <span class="text-muted">@craft.Quntity in stock!</span></p>
+                        </div>
+                    </div>
+                    @{
+                        if (craft.UserId == UserId)
+                        {
+
+                            <form class="d-flex justify-content-start m-2" asp-action="DeleteCraft"
+                                asp-route-craftId="@craft.CraftId" asp-controller="Crafts" method="post">
+                                <input type="submit" value="Delete" class="btn btn-danger">
+                            </form>
+                        }
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
