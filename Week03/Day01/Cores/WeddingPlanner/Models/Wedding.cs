@@ -46,7 +46,6 @@ public class Wedding
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     //! Navigation Property
-    // public List<Craft> MyCrafts { get; set; } = new List<Craft>{}; // OTM Users Crafts
-    // public List<Order> MyOrders { get; set; } = new List<Order>{}; // OTM Users Orders
+    public List<Participation> WeddingParticipation { get; set; } = new List<Participation>();
 
 }
