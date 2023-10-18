@@ -64,7 +64,12 @@ public class UsersController : Controller
         }
         int? userId = (int)HttpContext.Session.GetInt32("userId");
         User? user = _context.Users.FirstOrDefault(u => u.UserId == userId);
-        return View();
+        int ItemSold = _context.Orders
+                            .Include(order => order.Craft)
+                            .Where(order => order.Craft.UserId == userId)
+                            .Sum(order => order.Quantity);
+                            
+        return View(user);
     }
     //-------------------- Login ---------------------
     [HttpPost("users/login")]

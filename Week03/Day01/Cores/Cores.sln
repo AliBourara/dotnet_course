@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeddingPlanner", "WeddingPlanner\WeddingPlanner.csproj", "{5FE333D0-61C7-4D3E-AE3A-8983083457F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeddingPlanner", "WeddingPlanner\WeddingPlanner.csproj", "{FBDE8313-55D9-48C1-A2E6-02E8AF2E5989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5FE333D0-61C7-4D3E-AE3A-8983083457F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FE333D0-61C7-4D3E-AE3A-8983083457F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FE333D0-61C7-4D3E-AE3A-8983083457F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FE333D0-61C7-4D3E-AE3A-8983083457F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDE8313-55D9-48C1-A2E6-02E8AF2E5989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDE8313-55D9-48C1-A2E6-02E8AF2E5989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDE8313-55D9-48C1-A2E6-02E8AF2E5989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDE8313-55D9-48C1-A2E6-02E8AF2E5989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4A51B683-A6F6-4A45-99CC-B16A646923EB}
+		SolutionGuid = {CE6C6981-F386-49B6-BD3D-78BC976F4CD5}
 	EndGlobalSection
 EndGlobal

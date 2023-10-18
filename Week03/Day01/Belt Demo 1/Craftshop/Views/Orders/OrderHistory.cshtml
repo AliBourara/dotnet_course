@@ -1,0 +1,68 @@
+@{
+    int UserId = (int)Context.Session.GetInt32("userId");
+}
+@* @model User *@
+@model OrderHistoryView
+@await Html.PartialAsync("_NavBar")
+<div class="container mt-5">
+    <h1 class="mb-5">Order History</h1>
+    <div class="card shadow">
+        <h4 class="card-head">My Orders</h4>
+        <div class="card-body">
+            <table class="table table-striped border">
+                <thead>
+                    <th>Craft Ordered</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Seller</th>
+                    <th>Ordered Date</th>
+                </thead>
+                <tbody>
+                    @foreach (Order order in Model.Orders)
+                    {
+                        <tr>
+                            <td>@order.Craft.Title</td>
+                            <td>@order.Quantity</td>
+                            @{
+                                double? sum = order.Quantity * order.Craft.Price;
+                            }
+                            <td>$@sum</td>
+                            <td>@order.Buyer.Username</td>
+                            <td>@order.CreatedAt.ToString("MM/dd/yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card shadow mt-2">
+        <h4 class="card-head">My Sales</h4>
+        <div class="card-body">
+            <table class="table table-striped border">
+                <thead>
+                    <th>Craft Ordered</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Seller</th>
+                    <th>Ordered Date</th>
+                </thead>
+                <tbody>
+                    @foreach (Order order in Model.Sales)
+                    {
+                        <tr>
+                            <td>@order.Craft.Title</td>
+                            <td>@order.Quantity</td>
+                            @{
+                                double? sum = order.Quantity * order.Craft.Price;
+                            }
+                            <td>$@sum</td>
+                            <td>@order.Buyer.Username</td>
+                            <td>@order.CreatedAt.ToString("MM/dd/yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

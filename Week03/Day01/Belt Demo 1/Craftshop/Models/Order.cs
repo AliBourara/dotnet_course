@@ -15,7 +15,7 @@ public class Order
     public Craft? Craft { get; set; } // OTM Orders Crafts
 
     [Required(ErrorMessage = "Please Enter Quantity Ordered.")]
-    [Range(0, Int32.MaxValue, ErrorMessage = "Please Enter a Valid Quantity.")]
+    [Range(1, Int32.MaxValue, ErrorMessage = "Please Enter a Valid Quantity.")]
     public int Quantity { get; set; }
 
     // Created At
