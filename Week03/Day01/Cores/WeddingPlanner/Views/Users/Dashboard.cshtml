@@ -27,7 +27,7 @@
                         @{
                             if (wedding.UserId == userId)
                             {
-                                <form asp-action="DeleteWedding" asp-controller="Users" method="post">
+                                <form asp-action="DeleteWedding" asp-controller="Weddings" method="post">
                                     <input type="hidden" name="weddingId" value="@wedding.WeddingId">
                                     <input type="submit" value="Delete" class="btn btn-danger">
                                 </form>

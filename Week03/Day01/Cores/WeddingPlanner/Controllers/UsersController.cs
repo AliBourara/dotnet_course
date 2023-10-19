@@ -118,55 +118,7 @@ public class UsersController : Controller
     }
 
 
-    //----------------------------------------------------Weddings----------------------------------------------------------------------->
-    [HttpGet("weddings/new")]
-    public IActionResult AddWedding()
-    {
-        if (HttpContext.Session.GetInt32("userId") == null)
-        {
-            return RedirectToAction("LogReg", "Users");
-        }
-        return View();
-    }
-    [HttpPost("weddings/create")]
-    public IActionResult CreateWedding(Wedding newWedding)
-    {
-        if (ModelState.IsValid)
-        {
-            _context.Add(newWedding);
-            _context.SaveChanges();
 
-            return RedirectToAction("ShowWedding", "Users", new
-            {
-                weddingId = newWedding.WeddingId
-            });
-        }
-        return View("AddWedding");
-    }
-    [HttpPost("weddings/destroy")]
-    public IActionResult DeleteWedding(int weddingId)
-    {
-        if (HttpContext.Session.GetInt32("userId") == null)
-        {
-            return RedirectToAction("LogReg", "Users");
-        }
-        Wedding? DeleteWedding = _context.Weddings.FirstOrDefault(s => s.WeddingId == weddingId);
-
-        // 1 - Delete
-        _context.Weddings.Remove(DeleteWedding);
-        // 2 - Save
-        _context.SaveChanges();
-        return RedirectToAction("Dashboard");
-    }
-
-    [HttpGet("weddings/{weddingId}")]
-    public IActionResult ShowWedding(int weddingId)
-    {
-        Wedding? OneWedding = _context.Weddings.Include(wedding => wedding.WeddingParticipation)
-        .ThenInclude(p => p.Participant)
-        .FirstOrDefault(wedding => wedding.WeddingId == weddingId);
-        return View(OneWedding);
-    }
 
     //---------------------------------------------------------------Participate & UnParticipate---------------------------------------------------------->
     [HttpPost("participate/create")]
