@@ -1,6 +1,7 @@
 #pragma warning disable CS8618
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema; // New import for ****
+
 namespace WeddingPlanner.Models;
 
 public class User
@@ -9,13 +10,13 @@ public class User
     [Key]
     public int UserId { get; set; }
 
-    // firstname
-    [Required(ErrorMessage = "Please enter your firstname.")]
-    [MinLength(3, ErrorMessage = "Please enter a valid firstname .")]
+    [Required(ErrorMessage = "Please enter your First name.")]
+    [Display(Name = "First name")]
+    [MinLength(3, ErrorMessage = "Please enter a valid First name .")]
     public string Firstname { get; set; }
-    // lastname
-    [Required(ErrorMessage = "Please enter your lastname.")]
-    [MinLength(3, ErrorMessage = "Please enter a valid lastname .")]
+    [Required(ErrorMessage = "Please enter your Last name.")]
+    [Display(Name = "Last name")]
+    [MinLength(3, ErrorMessage = "Please enter a valid Last name .")]
     public string Lastname { get; set; }
 
 

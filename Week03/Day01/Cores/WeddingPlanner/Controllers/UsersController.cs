@@ -9,8 +9,8 @@ namespace WeddingPlanner.Controllers;
 public class UsersController : Controller
 
 {
-    private readonly WeddingPlannerContext _context;
-    public UsersController(WeddingPlannerContext context)
+    private readonly MyContext _context;
+    public UsersController(MyContext context)
     {
         _context = context;
     }
