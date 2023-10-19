@@ -1,7 +1,59 @@
 @{
-    string Username = (string)Context.Session.GetString("username");
+    string Firstname = (string)Context.Session.GetString("Firstname");
+    int userId = (int)Context.Session.GetInt32("userId");
 }
+@model AllWeddingsView
 @await Html.PartialAsync("_NavBar")
 <div class="container">
-    <h1>Welcome, @Username</h1>
+    <h1 class="my-4">Welcome, @Firstname</h1>
+    <table class="table table-primary table-striped ">
+        <thead class="thead-light">
+            <tr>
+                <th>Wedding Of</th>
+                <th>Date</th>
+                <th>Guess Count</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Wedding wedding in Model.AllWeddings)
+            {
+                <tr>
+                    <td><a href="~/weddings/@wedding.WeddingId" class="text-info">@wedding.WeddingOne
+                            @wedding.WeddingTwo</a></td>
+                    <td>@wedding.Date.ToString("MMM/dd/yy")</td>
+                    <td>@wedding.WeddingParticipation.Count</td>
+                    <td>
+                        @{
+                            if (wedding.UserId == userId)
+                            {
+                                <form asp-action="DeleteWedding" asp-controller="Users" method="post">
+                                    <input type="hidden" name="weddingId" value="@wedding.WeddingId">
+                                    <input type="submit" value="Delete" class="btn btn-danger">
+                                </form>
+                            }
+                            else
+                            {
+                                if (wedding.WeddingParticipation.Any(p => p.UserId == userId))
+                                {
+                                    Participation? PartToDelete = wedding.WeddingParticipation.FirstOrDefault(p => p.WeddingId ==
+                                    p.WeddingId && p.UserId == userId);
+                                    @await Html.PartialAsync("_UnPart", PartToDelete)
+                                    ;
+                                }
+                                else
+                                {
+                                    Model.Part.UserId = userId;
+                                    Model.Part.WeddingId = wedding.WeddingId;
+                                    @await Html.PartialAsync("_Part", Model.Part)
+                                    ;
+                                }
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
 </div>

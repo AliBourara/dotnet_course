@@ -18,16 +18,18 @@ public class UsersController : Controller
     public IActionResult LogReg()
     {
         if (HttpContext.Session.GetInt32("userId") == null)
-        { 
-            return View(); 
+        {
+            return View();
         }
-        return RedirectToAction("Dashboard");
+        return RedirectToAction("Dashboard", "Users");
     }
     //-------------------- Register ---------------------
 
     [HttpPost("users/create")]
     public IActionResult Register(User newUser)
     {
+
+
         if (ModelState.IsValid)
         {
             // Email Exist ?
@@ -60,11 +62,17 @@ public class UsersController : Controller
     {
         if (HttpContext.Session.GetInt32("userId") == null)
         {
-            return RedirectToAction("LogReg","Users");
+            return RedirectToAction("LogReg", "Users");
         }
         int? userId = (int)HttpContext.Session.GetInt32("userId");
         User? user = _context.Users.FirstOrDefault(u => u.UserId == userId);
-        return View();
+        List<Wedding> AllWeddingsWithCreator = _context.Weddings
+        .Include(p => p.WeddingParticipation).ToList();
+        AllWeddingsView allWeddingView = new()
+        {
+            AllWeddings = AllWeddingsWithCreator
+        };
+        return View(allWeddingView);
     }
     //-------------------- Login ---------------------
     [HttpPost("users/login")]
@@ -81,16 +89,10 @@ public class UsersController : Controller
             }
             else
             {
-                // Initialize hasher object
                 var hasher = new PasswordHasher<LoginUser>();
-
-                // verify provided password against hash stored in db
                 var result = hasher.VerifyHashedPassword(loginUser, userFromDb.Password, loginUser.LoginPassword);
-
-                // result can be compared to 0 for failure
                 if (result == 0)
                 {
-                    // handle failure (this should be similar to how "existing email" is handled)
                     ModelState.AddModelError("LoginPassword", "Wrong Password !");
                     return View("LogReg");
                 }
@@ -114,4 +116,85 @@ public class UsersController : Controller
         HttpContext.Session.Clear();
         return RedirectToAction("LogReg");
     }
+
+
+    //----------------------------------------------------Weddings----------------------------------------------------------------------->
+    [HttpGet("weddings/new")]
+    public IActionResult AddWedding()
+    {
+        if (HttpContext.Session.GetInt32("userId") == null)
+        {
+            return RedirectToAction("LogReg", "Users");
+        }
+        return View();
+    }
+    [HttpPost("weddings/create")]
+    public IActionResult CreateWedding(Wedding newWedding)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Add(newWedding);
+            _context.SaveChanges();
+
+            return RedirectToAction("ShowWedding", "Users", new
+            {
+                weddingId = newWedding.WeddingId
+            });
+        }
+        return View("AddWedding");
+    }
+    [HttpPost("weddings/destroy")]
+    public IActionResult DeleteWedding(int weddingId)
+    {
+        if (HttpContext.Session.GetInt32("userId") == null)
+        {
+            return RedirectToAction("LogReg", "Users");
+        }
+        Wedding? DeleteWedding = _context.Weddings.FirstOrDefault(s => s.WeddingId == weddingId);
+
+        // 1 - Delete
+        _context.Weddings.Remove(DeleteWedding);
+        // 2 - Save
+        _context.SaveChanges();
+        return RedirectToAction("Dashboard");
+    }
+
+    [HttpGet("weddings/{weddingId}")]
+    public IActionResult ShowWedding(int weddingId)
+    {
+        Wedding? OneWedding = _context.Weddings.Include(wedding => wedding.WeddingParticipation)
+        .ThenInclude(p => p.Participant)
+        .FirstOrDefault(wedding => wedding.WeddingId == weddingId);
+        return View(OneWedding);
+    }
+
+    //---------------------------------------------------------------Participate & UnParticipate---------------------------------------------------------->
+    [HttpPost("participate/create")]
+    public IActionResult Part(Participation newPart)
+    {
+        if (ModelState.IsValid)
+        {
+            // 1 - Add
+            _context.Add(newPart);
+            // 2 - Save
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+        return RedirectToAction("Dashboard");
+    }
+    [HttpPost("participate/destroy")]
+    public IActionResult UnPart(Participation PartToDelete)
+    {
+        if (ModelState.IsValid)
+        {
+            // 1 - Add
+            _context.Remove(PartToDelete);
+            // 2 - Save
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+        return RedirectToAction("Dashboard");
+    }
+
+
 }

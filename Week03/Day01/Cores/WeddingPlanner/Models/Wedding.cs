@@ -31,9 +31,10 @@ public class Wedding
     public string WeddingTwo { get; set; }
 
 
-    [Required]
-    [FuturDate]
-    public DateTime Date { get; set; }
+    [Required(ErrorMessage = "Please enter your Wedding Date.")]
+    [FuturDate(ErrorMessage = "Please enter a Valid Date.")]
+    
+    public DateTime  Date { get; set; }
 
     [Required(ErrorMessage = "Please enter your Adress.")]
 

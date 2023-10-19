@@ -12,7 +12,7 @@ public class Participation
     //!  WeddingID "Foreign key" 
 
     [Required]
-    public int WeddingID { get; set; }
+    public int WeddingId { get; set; }
 
     //!  UserID "Foreign key" 
     [Required]
@@ -25,6 +25,6 @@ public class Participation
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     //! Navigation Properties
-    // public Post? Post { get; set; }
-    // public User? User { get; set; }
+    public Wedding? Wedding { get; set; }
+    public User? Participant { get; set; }
 }

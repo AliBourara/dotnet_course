@@ -46,7 +46,7 @@ public class User
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
     //! Navigation Property
-    public Wedding MyWedding { get; set; }
+    public List<Wedding> MyWeddings { get; set; } = new List<Wedding>();
     public List<Participation> ParticipationWedding {get;set;} = new List<Participation>();
 
 }

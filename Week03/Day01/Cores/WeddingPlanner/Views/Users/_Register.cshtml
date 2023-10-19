@@ -2,30 +2,30 @@
 <div class="card mt-3 shadow">
     <div class="card-header">Register</div>
     <div class="card-body">
-        <form asp-action="Register" asp-controller="Users" method="Post">
+        <form asp-action="Register" asp-controller="Users" method="post">
             <div class="mb-3">
                 <label asp-for="Firstname" class="form-label"></label>
-                <input type="text" asp-for="Firstname" class="form-control">
+                <input  asp-for="Firstname" class="form-control">
                 <span asp-validation-for="Firstname" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Lastname" class="form-label"></label>
-                <input type="text" asp-for="Lastname" class="form-control">
+                <input  asp-for="Lastname" class="form-control">
                 <span asp-validation-for="Lastname" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Email" class="form-label"></label>
-                <input type="text" asp-for="Email" class="form-control">
+                <input  asp-for="Email" class="form-control">
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Password" class="form-label"></label>
-                <input type="text" asp-for="Password" class="form-control">
+                <input  asp-for="Password" class="form-control">
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="ConfirmPassword" class="form-label"></label>
-                <input type="text" asp-for="ConfirmPassword" class="form-control">
+                <input  asp-for="ConfirmPassword" class="form-control">
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
             <input type="submit" value="Register" class="btn btn-dark btn-lg">

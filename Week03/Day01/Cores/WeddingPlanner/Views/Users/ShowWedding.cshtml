@@ -1,0 +1,26 @@
+@{
+    int UserIdFromSession = (int)Context.Session.GetInt32("userId");
+}
+@model Wedding
+@await Html.PartialAsync("_NavBar")
+<div class="container">
+    <div class="row">
+        <h1>@Model.WeddingOne & @Model.WeddingTwo Wedding</h1>
+    </div>
+    <div class="row">
+        <h3>Date : @Model.Date.ToString("MMM/dd/yy")</h3>
+        <div class="d-flex flex-column">
+            <h3>Guests</h3>
+            <div class="border border-1">
+                @if (@Model.WeddingParticipation.Count > 0)
+                {
+                    foreach (var g in @Model.WeddingParticipation)
+                    {
+                        <p>@g.Participant.Firstname @g.Participant.Lastname</p>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+
+</div>

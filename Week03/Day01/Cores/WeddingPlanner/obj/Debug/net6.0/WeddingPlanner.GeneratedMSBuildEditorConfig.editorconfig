@@ -8,61 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WeddingPlanner
 build_property.RootNamespace = WeddingPlanner
-build_property.ProjectDir = C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week03\Day01\Cores\WeddingPlanner\
+build_property.ProjectDir = C:\Users\Bourara\Desktop\dotnet_course\Week03\Day01\Cores\WeddingPlanner\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tnt_3\OneDrive\Bureau\C#\dotnet_course\Week03\Day01\Cores\WeddingPlanner
+build_property.MSBuildProjectDirectory = C:\Users\Bourara\Desktop\dotnet_course\Week03\Day01\Cores\WeddingPlanner
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Home/Index.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Home/Privacy.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/Error.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_Footer.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_Layout.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_NavBar.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_NavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/Dashboard.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/AddWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQWRkV2VkZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/LogReg.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/LogReg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9nUmVnLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/_Login.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/ShowWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU2hvd1dlZGRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/_Register.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/_Part.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX1BhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/_Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX1JlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/_ViewImports.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/Users/_Unpart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX1VucGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tnt_3/OneDrive/Bureau/C\#/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/_ViewStart.cshtml]
+[C:/Users/Bourara/Desktop/dotnet_course/Week03/Day01/Cores/WeddingPlanner/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

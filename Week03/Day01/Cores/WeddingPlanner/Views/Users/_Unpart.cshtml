@@ -1,0 +1,9 @@
+@model Participation
+<form asp-action="UnPart" asp-controller="Users" method="post">
+    <input type="hidden" asp-for="@Model.ParticipationId">
+    <input type="hidden" asp-for="@Model.UserId" >
+    <input type="hidden" asp-for="@Model.WeddingId" >
+    <Button class="btn btn-dark" type="submit">
+        Un-RSVP
+    </Button>
+</form>

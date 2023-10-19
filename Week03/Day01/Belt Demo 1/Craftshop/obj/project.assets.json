@@ -781,19 +781,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tnt_3\\.nuget\\packages\\": {}
+    "C:\\Users\\Bourara\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week03\\Day01\\Belt Demo 1\\Craftshop\\Craftshop.csproj",
+      "projectUniqueName": "C:\\Users\\Bourara\\Desktop\\dotnet_course\\Week03\\Day01\\Belt Demo 1\\Craftshop\\Craftshop.csproj",
       "projectName": "Craftshop",
-      "projectPath": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week03\\Day01\\Belt Demo 1\\Craftshop\\Craftshop.csproj",
-      "packagesPath": "C:\\Users\\tnt_3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tnt_3\\OneDrive\\Bureau\\C#\\dotnet_course\\Week03\\Day01\\Belt Demo 1\\Craftshop\\obj\\",
+      "projectPath": "C:\\Users\\Bourara\\Desktop\\dotnet_course\\Week03\\Day01\\Belt Demo 1\\Craftshop\\Craftshop.csproj",
+      "packagesPath": "C:\\Users\\Bourara\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bourara\\Desktop\\dotnet_course\\Week03\\Day01\\Belt Demo 1\\Craftshop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tnt_3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Bourara\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
