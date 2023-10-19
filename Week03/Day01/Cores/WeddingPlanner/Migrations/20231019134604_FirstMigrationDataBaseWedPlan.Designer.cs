@@ -10,9 +10,9 @@ using WeddingPlanner.Models;
 
 namespace WeddingPlanner.Migrations
 {
-    [DbContext(typeof(WeddingPlannerContext))]
-    [Migration("20231019091549_FirstMigrationWedPlanDataBase")]
-    partial class FirstMigrationWedPlanDataBase
+    [DbContext(typeof(MyContext))]
+    [Migration("20231019134604_FirstMigrationDataBaseWedPlan")]
+    partial class FirstMigrationDataBaseWedPlan
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

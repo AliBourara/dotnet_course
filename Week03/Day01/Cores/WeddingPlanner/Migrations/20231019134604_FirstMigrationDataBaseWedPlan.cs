@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WeddingPlanner.Migrations
 {
-    public partial class FirstMigrationWedPlanDataBase : Migration
+    public partial class FirstMigrationDataBaseWedPlan : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
